@@ -1,0 +1,6 @@
+<div class="groups">
+    <div class="placeholder-groups" *ngIf="arrGroups.length<1">No existen grupos</div>
+    <div class="group-list" *ngFor="let group of arrGroups">
+    <button type="button"  (click)="accesGroup(group)" class="group-container"><img src="{{group.img}}" class="circle">{{group.name}}</button>
+    </div>
+</div>

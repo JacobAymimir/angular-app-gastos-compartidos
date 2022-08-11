@@ -1,0 +1,42 @@
+<div class="toolbar">
+    <div class="modal-title"> {{title}} </div>
+    <button class="close" type="button" (click)="close()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+    </button>
+</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+    <div class="form-group">
+        <div class="form-field">
+            <span class="label">Pagador</span>
+          <select type="number" formControlName="user" class="form-field">
+            <option  [ngValue]="undefined" *ngIf="arrUsers.length<1" disabled selected> No existe ningun usuario. </option>
+            <option  *ngFor="let user of arrUsers" [ngValue]="user">{{user.name}}</option>
+        </select>
+        <span class="form-label" *ngIf="f['user'].errors && f['user'].errors['required']!=null && form.touched">Introduzca un usuario</span>
+
+        </div>
+
+        <div class="form-field">
+        <span class="label">Cantidad</span>
+        <input  type="text"  pattern="^\d*?(\.\d{0,2})?$" min="0" class="form-control form-field" formControlName="amount" placeholder="0,00€">
+        <span class="form-label" *ngIf="f['amount'].errors && f['amount'].errors['required']!=null && form.touched">Introduzca una cantidad</span>
+        </div>
+
+        <div class="form-field">
+            <span class="label">Fecha de inicio</span>
+            <input class="form-date-input" type="date" class="form-control form-field" formControlName="paymentDate"id="input-date" name="input-date-start"/>
+            <span class="form-label" *ngIf="f['paymentDate'].errors && f['paymentDate'].errors['required']!=null && form.touched">La fecha es obligatoria</span>
+
+        </div>
+
+        <div class="form-field">
+        <span class="label">Descripción del pago</span>
+        <input  type="text"  class="form-control form-field" formControlName="description" placeholder="Descripcion...">
+        <span class="form-label" *ngIf="f['description'].errors && f['description'].errors['required']!=null && form.touched">Introduzca una descripción</span>
+        </div>
+
+
+    </div>
+        <button [disabled]="!form.valid" type="submit" value="enviar">Enviar</button>
+</form>

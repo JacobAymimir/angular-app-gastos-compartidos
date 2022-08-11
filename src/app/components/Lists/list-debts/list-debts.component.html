@@ -1,0 +1,19 @@
+<div class="center">
+    <h3>Deudas</h3>
+
+    <div class="groups">
+        <div class="placeholder-groups" *ngIf="arrBalances.length<1">No existen Deudas</div>
+
+        <div class="group-list" *ngFor="let balance of arrBalances">
+            <div class="group-container">
+                <div class="rowImage"><img src="{{balance.user.img}}" class="circle"></div>
+                <div class="row1">
+                    <div  class="fieldUserName"><span>{{balance.user.name}}</span></div>
+                    <div [class.debt]="balance.amount<0" class="fieldDebt"><span>{{balance.amount < 0 ? 'Debe en total ' : 'Le deben ' }}{{balance.amount.toFixed(2)}}€</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

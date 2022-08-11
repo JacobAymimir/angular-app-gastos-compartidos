@@ -1,0 +1,89 @@
+@import "../../../../var.scss";
+
+.form{
+    .form-user{
+        margin:10px
+    }
+    
+    .form-label {
+    font-size: 13px;
+    display: flex;
+    margin-top: 4px;
+    color:red;
+    }
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    button[type=submit]{
+        padding: 9px;
+        background-color: lightgray;
+        color:white;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        min-width: auto;
+        font-size: 15px ;
+        align-self: end;   
+        &:valid{    
+          background-color:  $blue;
+          border: 1px solid $blue;
+          &:hover{
+            background-color:  $blue;
+            cursor: pointer;
+          }
+        }
+    }
+
+    
+        input[type=text]{
+        padding: 10px;
+        border: 0;
+        border-bottom: 2px solid lightgray;
+        min-width: auto;
+        font-size: 15px ;
+        align-self: end;
+        &:focus-visible{
+            border-bottom: 2px solid lightblue;
+            outline: 0 none;
+    
+            }
+        &::placeholder{
+        color:$grey;
+        font-size: 15px;
+        text-align: left;
+    }
+    }
+    input[type=submit].close{
+            background-color: lightgrey;
+        }
+
+}
+
+
+.toolbar{
+  display: flex;
+    border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: $primary-color;
+
+}
+
+.modal-title{
+  font-size: 15px;
+  font-weight: 600;
+  flex-grow: 1;
+  margin: 10px;
+  color:white;
+}
+
+  button.close {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    margin-left: 30px;
+  }
+
+

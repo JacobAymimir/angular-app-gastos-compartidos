@@ -1,0 +1,12 @@
+<ng-container *ngIf="display$ | async as display">
+    <section [class.open]="display === 'open'" (click)="close()">
+        <div (click)="$event.stopPropagation()">
+
+            <div>
+                <app-create-form-group *ngIf="title == 'HomeComponent'"></app-create-form-group>
+                <app-create-form-users *ngIf="title == 'ListUsersComponent'"></app-create-form-users>
+                <app-create-form-payment *ngIf="title == 'ListPaymentsComponent'"></app-create-form-payment>
+            </div>
+        </div>
+    </section>
+</ng-container>

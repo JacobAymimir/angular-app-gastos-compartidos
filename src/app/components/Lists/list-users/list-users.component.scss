@@ -1,0 +1,50 @@
+        .group-list{
+      display: flex;
+      flex-direction: column;
+
+
+    }
+
+    .group-container{
+      display: flex;
+      margin: 10px;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+      background-color: none;
+      border-radius: 5px;
+      border: none;
+      padding-left: 10px;
+      background-color: white;
+    }
+
+      .group-list{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .circle{
+      margin-right: 10px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+
+    .placeholder-groups{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 14px;
+      color: lightgray;
+      margin: 10px;
+      cursor: default;
+      font-weight: bold;
+    }
+
+    
+    .divider{
+        border-top: 2px dashed #bbb;
+        width: 100%;
+        padding: none;
+        margin: none;
+    }
