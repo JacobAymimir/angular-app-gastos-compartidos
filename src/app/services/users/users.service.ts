@@ -9,6 +9,7 @@ export interface User {
   group: Group;
   img: String;
 }
+
 @Injectable({
   providedIn: 'root'
 })
