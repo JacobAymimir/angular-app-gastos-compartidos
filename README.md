@@ -37,9 +37,18 @@ El proyecto tendrá como objetivo las siguientes funcionalidades y caracteristic
 
 ## Previews
 
-![previewGrupos](https://user-images.githubusercontent.com/40420591/191256298-a9a765ae-ac1f-4b58-acd7-d4bc02bfae0b.PNG)
 
-![previewPayments](https://user-images.githubusercontent.com/40420591/191259389-ac32f58c-7664-4a77-8856-805c68d68e1f.PNG)
-![previewUsers](https://user-images.githubusercontent.com/40420591/191259369-2b6e87c9-372d-4f25-b838-16db8e0c6bf8.PNG)
-![previewDebts](https://user-images.githubusercontent.com/40420591/191259400-5d540828-ebe9-41a0-a642-fc4d316723ff.PNG)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/40420591/191290492-2b7e3344-c9ed-40a6-b01c-86a0d0674886.PNG">
+</p>
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/40420591/191259389-ac32f58c-7664-4a77-8856-805c68d68e1f.PNG">
+</p>
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/40420591/191259369-2b6e87c9-372d-4f25-b838-16db8e0c6bf8.PNG">
+</p>
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/40420591/191259400-5d540828-ebe9-41a0-a642-fc4d316723ff.PNG">
+</p>
+
 
